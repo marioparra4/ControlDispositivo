@@ -1,0 +1,30 @@
+CREATE DATABASE estadosDispositivos;
+USE estadosDispositivos;
+
+CREATE TABLE puerta (
+  id INT NOT NULL AUTO_INCREMENT,
+  estado INT NOT NULL,
+  fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE termometro (
+  id INT NOT NULL AUTO_INCREMENT,
+  estado INT NOT NULL,
+  fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE historialPuerta (
+  id INT NOT NULL AUTO_INCREMENT,
+  estado INT NOT NULL,
+  fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE historialTermometro (
+  id INT NOT NULL AUTO_INCREMENT,
+  estado INT NOT NULL,
+  fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
